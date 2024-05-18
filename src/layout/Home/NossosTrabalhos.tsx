@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { SiSecurityscorecard } from "react-icons/si";
 import { GiPadlock } from "react-icons/gi";
 import { HiHomeModern } from "react-icons/hi2";
