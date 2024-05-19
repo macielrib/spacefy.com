@@ -1,8 +1,7 @@
 "use client";
 
-import { Icon } from "@tabler/icons-react";
 import { cn } from "../../utils/cn";
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
   items,
@@ -87,7 +86,7 @@ export const InfiniteMovingCards = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item, idx) => (
+        {items.map((item) => (
           <li
             className="w-[350px] max-w-full relative rounded-2xl flex-shrink-0  px-8 py-6 md:w-[450px] bg-[#171717] border-solid border border-[#333] "
             key={item.name}
