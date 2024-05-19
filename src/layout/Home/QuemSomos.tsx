@@ -1,11 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-"use client";
-
-import { Link } from "react-router-dom";
-import { Button } from "../../components/ui/moving-border";
 import { WobbleCard } from "../../components/ui/wobble-card";
-import { GiFizzingFlask, GiJusticeStar, GiStarFormation } from "react-icons/gi";
-import { FaArrowRightLong } from "react-icons/fa6";
 
 export function QuemSomos() {
   return (
@@ -27,9 +20,8 @@ export function QuemSomos() {
             seu negócio no mercado. Desvende as possibilidades de uma presença
             online marcante.
           </p>
-          
         </div>
-       
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
           <WobbleCard
             containerClassName="col-span-1 lg:col-span-2 h-full bg-purple-800 min-h-[500px] lg:min-h-[300px]"
@@ -57,18 +49,19 @@ export function QuemSomos() {
               Preços Baixos, Qualidade Alta.
             </h2>
             <p className="mt-4 text-left  text-base/6 font-mulish font-medium leading-normal text-white">
-              Sites de alta qualidade a preços acessíveis. A sua excelência garantida!
+              Sites de alta qualidade a preços acessíveis. A sua excelência
+              garantida!
             </p>
-         
           </WobbleCard>
-          
+
           <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-indigo-800 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
             <div className="max-w-sm">
-            <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white font-mulish">
-              Hospedagem Gratuita e Suporte Magnífico.
+              <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white font-mulish">
+                Hospedagem Gratuita e Suporte Magnífico.
               </h2>
               <p className="mt-4 text-left  text-base/6 font-mulish font-medium leading-normal text-white">
-              Hospede seu site gratuitamente com suporte excepcional. Sua satisfação garantida!
+                Hospede seu site gratuitamente com suporte excepcional. Sua
+                satisfação garantida!
               </p>
             </div>
             <img
@@ -80,7 +73,6 @@ export function QuemSomos() {
             />
           </WobbleCard>
         </div>
-      
       </section>
     </>
   );

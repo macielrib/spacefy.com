@@ -1,8 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 
 import { Link } from "react-router-dom";
 import { CardBody, CardContainer, CardItem } from "../../components/ui/3d-card";
-import { MdContacts } from "react-icons/md";
 import { FaTwitter } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";

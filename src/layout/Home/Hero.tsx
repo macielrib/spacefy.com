@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import { GiFizzingFlask } from "react-icons/gi";
 import { Button } from "../../components/ui/moving-border";

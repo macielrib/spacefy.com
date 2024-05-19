@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Link } from "react-router-dom";
 import { CgMenuGridO } from "react-icons/cg";
 import { GiFizzingFlask } from "react-icons/gi";
@@ -7,7 +6,7 @@ import { BiLogoDiscordAlt } from "react-icons/bi";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { SiRocket } from "react-icons/si";
 
-import { useState } from "react";
+
 
 export default function Navbar() {
   const navLinks = [
@@ -19,7 +18,7 @@ export default function Navbar() {
     { label: "Contate-nos", to: "/" },
   ];
 
-  const [loading, setLoading] = useState(false);
+
 
   return (
     <header>

@@ -1,7 +1,4 @@
 
-import { SiSecurityscorecard } from "react-icons/si";
-import { GiPadlock } from "react-icons/gi";
-import { HiHomeModern } from "react-icons/hi2";
 import { Tabs } from "../../components/ui/tabs";
 
 export function NossosTrabalhos() {
