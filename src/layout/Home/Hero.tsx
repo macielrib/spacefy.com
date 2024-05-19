@@ -18,7 +18,7 @@ export function HeroSection() {
           <div className="text-center max-w-md lg:max-w-screen-xl">
             <Button
               borderRadius="1.75rem"
-              className="bg-[ #171717] text-white font-inter font-semibold  border-[#333] gap-2 "
+              className="bg-[ #171717] text-white font-inter font-semibold border-[#333] gap-2"
             >
               Sites de Sucesso{" "}
               <GiJusticeStar className="animate-spin duration-1000 delay-1000 text-indigo-600 text-lg" />
@@ -35,7 +35,7 @@ export function HeroSection() {
               conosco!
             </p>
           </div>
-          <div className="flex justify-center text-center py-6 gap-4 ">
+          <div className="flex justify-center text-center py-6 gap-4 px-6 flex-wrap">
             <Link
               to=""
               className="flex font-poppins text-white bg-indigo-800 rounded-lg py-2 px-6 text-sm gap-2 transition-all duration-300 font-medium hover:-translate-y-1 hover:bg-white hover:text-black hover:border-0"

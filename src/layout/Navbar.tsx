@@ -67,7 +67,7 @@ export default function Navbar() {
 
                 <li className="absolute bottom-0 mb-6">
                   <a className="bg-black py-2 px-24 font-poppins text-white font-medium gap-2 border border-solid border-[#313131] transition-all duration-300 hover:bg-white hover:text-black hover:scale-105 hover:border-white">
-                    <GiFizzingFlask className="justify-start" /> Contate-nos
+                    Contato
                   </a>
                 </li>
               </ul>

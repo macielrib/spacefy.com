@@ -11,7 +11,7 @@ export function ContactUs() {
           <h1 className="text-[#daabff] text-md font-mulish font-semibold ">
             Garantindo a Inovação!
           </h1>
-          <h1 className="font-poppins font-bold text-5xl lg:text-7xl text-white max-w-screen-xl">
+          <h1 className="font-poppins font-bold text-4xl lg:text-7xl text-white max-w-screen-xl">
             Transforme Ideias,
             <br />{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-[#daabff] to-[#5723ac]">

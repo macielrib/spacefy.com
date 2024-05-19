@@ -8,7 +8,7 @@ export function QuemSomos() {
           <h1 className="text-[#daabff] text-md font-mulish font-semibold ">
             Experiência & Inovação
           </h1>
-          <h1 className="font-poppins font-bold text-5xl lg:text-7xl text-white max-w-screen-xl">
+          <h1 className="font-poppins font-bold text-4xl lg:text-7xl text-white max-w-screen-xl">
             Sites Inovadores,
             <br />{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-[#daabff] to-[#5723ac]">
@@ -22,7 +22,7 @@ export function QuemSomos() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full px-6">
           <WobbleCard
             containerClassName="col-span-1 lg:col-span-2 h-full bg-purple-800 min-h-[500px] lg:min-h-[300px]"
             className=""

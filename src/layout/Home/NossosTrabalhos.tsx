@@ -8,8 +8,10 @@ export function NossosTrabalhos() {
       value: "hospedagem",
       content: (
         <>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 font-bold text-white bg-[url('https://cherrycode.com.br/img/hype.f49c8371.webp')]  border-4 border-solid border-[#171717]"></div>
-       
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717]">
+      
+          <HostImagem />
+        </div>
         </>
       ),
     },
@@ -18,21 +20,36 @@ export function NossosTrabalhos() {
       title: "Site Empresarial",
       value: "empresarial",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-5xl font-bold text-white bg-[url('https://cherrycode.com.br/img/romanscripter.088f72f0.png')]  border-4 border-solid border-[#171717]"></div>
+        <>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] ">
+      
+          <EmpresarialImagem />
+        </div>
+        </>
       ),
     },
     {
       title: "Site para Jogos",
       value: "jogos",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-5xl font-bold text-white bg-[url('https://cherrycode.com.br/img/cbrp.5a3ceb49.png')]  border-4 border-solid border-[#171717]"></div>
+        <>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] ">
+      
+          <JogosImagem />
+        </div>
+        </>
       ),
     },
     {
       title: "Site Constitucional",
       value: "constitucional",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-5xl font-bold text-white bg-[url('https://cherrycode.com.br/img/dh-telecom.91cac3a4.png')]  border-4 border-solid border-[#171717]"></div>
+        <>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] ">
+      
+          <ConstitucionalImagem />
+        </div>
+        </>
       ),
     },
   ];
@@ -40,12 +57,12 @@ export function NossosTrabalhos() {
   return (
     <>
       <section className="bg-black py-12">
-        <div className="flex items-center">
-          <div className="flex flex-col lg:items-start py-12 lg:px-16 text-center lg:text-start">
+        <div className="flex flex-col lg:items-start py-12 lg:px-16 text-center lg:text-start ">
+          <div className="px-6">
             <h1 className="text-[#daabff] text-md font-mulish font-semibold ">
               Moderno & Capacitado
             </h1>
-            <h1 className="font-poppins font-bold text-5xl lg:text-7xl text-white max-w-screen-xl">
+            <h1 className="font-poppins font-bold text-4xl lg:text-7xl text-white ">
               Serviços Avançados,
               <br />{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-b from-[#daabff] to-[#5723ac]">
@@ -57,12 +74,60 @@ export function NossosTrabalhos() {
               projetos sejam modernizados com as mais recentes tecnologias.
               Experimente inovação e qualidade em cada detalhe.
             </p>
-            <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative flex flex-col  w-full  items-start justify-start py-12">
-              <Tabs tabs={tabs} />
-            </div>
+          </div>
+          <div className="h-[40rem] md:h-[40rem] [perspective:1000px] relative flex flex-col  w-full  items-start justify-start py-4 px-2">
+            <Tabs tabs={tabs} />
           </div>
         </div>
       </section>
     </>
   );
 }
+
+const HostImagem = () => {
+  return (
+    <img
+      src="https://cherrycode.com.br/img/hype.f49c8371.webp"
+      alt="HostImagem"
+      width="1000"
+      height="1000"
+      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+    />
+  );
+};
+
+const EmpresarialImagem = () => {
+  return (
+    <img
+      src="https://cherrycode.com.br/img/romanscripter.088f72f0.png"
+      alt="EmpresarialImagem"
+      width="1000"
+      height="1000"
+      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+    />
+  );
+};
+
+const JogosImagem = () => {
+  return (
+    <img
+      src="https://cherrycode.com.br/img/cbrp.5a3ceb49.png"
+      alt="JogosImagem"
+      width="1000"
+      height="1000"
+      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+    />
+  );
+};
+
+const ConstitucionalImagem = () => {
+  return (
+    <img
+      src="https://cherrycode.com.br/img/dh-telecom.91cac3a4.png"
+      alt="ConstitucionalImagem"
+      width="1000"
+      height="1000"
+      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+    />
+  );
+};
