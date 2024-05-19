@@ -8,9 +8,11 @@ export function NossosTrabalhos() {
       value: "hospedagem",
       content: (
         <>
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717]">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('https://cherrycode.com.br/img/hype.f49c8371.webp')]">
       
+          <div className="lg:hidden">
           <HostImagem />
+          </div>
         </div>
         </>
       ),
@@ -21,9 +23,11 @@ export function NossosTrabalhos() {
       value: "empresarial",
       content: (
         <>
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] ">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('https://cherrycode.com.br/img/romanscripter.088f72f0.png')]">
       
-          <EmpresarialImagem />
+      <div className="lg:hidden">
+      <EmpresarialImagem />
+      </div>
         </div>
         </>
       ),
@@ -33,9 +37,11 @@ export function NossosTrabalhos() {
       value: "jogos",
       content: (
         <>
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] ">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('https://cherrycode.com.br/img/cbrp.5a3ceb49.png')]">
       
-          <JogosImagem />
+      <div className="lg:hidden">
+      <JogosImagem />
+      </div>
         </div>
         </>
       ),
@@ -45,9 +51,11 @@ export function NossosTrabalhos() {
       value: "constitucional",
       content: (
         <>
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] ">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('https://cherrycode.com.br/img/dh-telecom.91cac3a4.png')]">
       
-          <ConstitucionalImagem />
+      <div className="lg:hidden">
+      <ConstitucionalImagem />
+      </div>
         </div>
         </>
       ),
