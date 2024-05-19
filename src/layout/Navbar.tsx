@@ -45,16 +45,12 @@ export default function Navbar() {
               <ul className="menu p-4 w-80 min-h-full bg-[#171717] border-r border-solid shadow-xl border-[#19191A] text-base-content object-cover">
                 {/* Sidebar content here */}
                 <li className="mb-6">
-                  <Link
-                    to={"/"}
-                    className="flex items-center transition duration-300 hover:scale-105"
-                  >
-                    <img
-                      src="https://assets-global.website-files.com/662e02200e936b9abdb4cb43/662e38f56f12f5305ecba023_Logo.svg"
-                      alt="Spacefy Logo"
-                      className="w-32 "
-                    />
-                  </Link>
+                <Link
+            to={"/"}
+            className="flex items-center  text-white transition duration-300 hover:scale-105  gap-4 font-inter text-2xl text-center justify-center font-bold"
+          >
+            <SiRocket className="!text-indigo-600 text-3xl" /> Spacefy
+          </Link>
                 </li>
                 <li className="font-poppins font-normal text-lg text-center text-[#9e9e9e] transition duration-300 hover:text-white hover:scale-105 ">
                   <a>Quem Somos?</a>
@@ -71,7 +67,7 @@ export default function Navbar() {
 
                 <li className="absolute bottom-0 mb-6">
                   <a className="bg-black py-2 px-24 font-poppins text-white font-medium gap-2 border border-solid border-[#313131] transition-all duration-300 hover:bg-white hover:text-black hover:scale-105 hover:border-white">
-                    <GiFizzingFlask className="justify-start" /> Hire Us
+                    <GiFizzingFlask className="justify-start" /> Contate-nos
                   </a>
                 </li>
               </ul>
