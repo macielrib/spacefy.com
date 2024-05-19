@@ -26,7 +26,7 @@ export function Works() {
             online marcante.
           </p>
         </div>
-        <div className="flex justify-center -mb-16 flex-wrap">
+        <div className="flex justify-center gap-4 -mb-16 flex-wrap">
           <CardContainer className="inter-var gap-4">
             <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[25rem] h-auto rounded-xl p-6 border  ">
               <CardItem
