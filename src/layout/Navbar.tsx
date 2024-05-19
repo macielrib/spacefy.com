@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { CgMenuGridO } from "react-icons/cg";
-import { GiFizzingFlask } from "react-icons/gi";
 import { FaDiscord } from "react-icons/fa6";
 import { BiLogoDiscordAlt } from "react-icons/bi";
 import { MdOutlineTravelExplore } from "react-icons/md";
