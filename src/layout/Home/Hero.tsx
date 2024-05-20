@@ -1,14 +1,22 @@
-"use client";
-import { GiFizzingFlask } from "react-icons/gi";
-import { Button } from "../../components/ui/moving-border";
-import { Link } from "react-router-dom";
-import { GiJusticeStar } from "react-icons/gi";
-import { MdContacts } from "react-icons/md";
+import { GiFizzingFlask, GiJusticeStar } from "react-icons/gi"
+import { MdContacts } from "react-icons/md"
+import { Link } from "react-router-dom"
+import { Button } from "../../components/ui/moving-border"
+import { ContactUs } from "./ContactUs"
+import { NossosTrabalhos } from "./NossosTrabalhos"
+import { QuemSomos } from "./QuemSomos"
+import { Reviews } from "./Reviews"
 
-import { QuemSomos } from "./QuemSomos";
-import { NossosTrabalhos } from "./NossosTrabalhos";
-import { Reviews } from "./Reviews";
-import { ContactUs } from "./ContactUs";
+import { Carousel } from "react-responsive-carousel"
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+
+const HERO_IMAGES = [
+  '/sliders/AmazingEmpresarial.png',
+  '/sliders/JWConstitucional.png',
+  '/sliders/LabsPainelDeControle.png',
+  '/sliders/Pulsecode.png',
+  '/sliders/TwistyJogo.png',
+]
 
 export function HeroSection() {
   return (
@@ -37,7 +45,8 @@ export function HeroSection() {
           </div>
           <div className="flex justify-center text-center py-6 gap-4 px-6 flex-wrap">
             <Link
-              to=""
+              to="https://discord.gg/grv9szCdHe"
+              target="_blank"
               className="flex font-poppins text-white bg-indigo-800 rounded-lg py-2 px-6 text-sm gap-2 transition-all duration-300 font-medium hover:-translate-y-1 hover:bg-white hover:text-black hover:border-0"
             >
               Começar Agora! <GiFizzingFlask className="mt-[0.2rem]" />
@@ -49,23 +58,34 @@ export function HeroSection() {
               Falar Conosco <MdContacts className="mt-[0.2rem]" />
             </Link>
           </div>
-          <div className="py-8 px-6 rounded-xl ">
-            <img
-              src={`https://ui.aceternity.com/_next/image?url=%2Flinear.webp&w=1920&q=75`}
-              alt="hero"
-              height={720}
-              width={1000}
-              className="mx-auto rounded-2xl object-cover h-full object-left-top border-solid border-4 border-[#171717]"
-              draggable={false}
-            />
+          <div className="py-8 px-6">
+            <Carousel
+              interval={2500}
+              autoPlay
+              infiniteLoop
+              swipeable={false}
+              showThumbs={false}
+              showArrows={false}
+              showIndicators={false}
+              showStatus={false}
+            >
+              {HERO_IMAGES.map((image, index) => (
+                <div key={index} className="p-4">
+                  <img
+                    src={image}
+                    className="max-w-[1280px] max-h-[720px] overflow-hidden rounded-2xl shadow-[0_0px_15px_3px_rgb(61,61,61,0.8)] select-none"
+                  />
+                </div>
+              ))}
+            </Carousel>
           </div>
         </div>
-      </section>
 
-      <QuemSomos></QuemSomos>
-      <NossosTrabalhos></NossosTrabalhos>
-      <Reviews></Reviews>
-      <ContactUs></ContactUs>
+        <QuemSomos />
+        <NossosTrabalhos />
+        <Reviews />
+        <ContactUs />
+      </section>
     </>
-  );
+  )
 }
