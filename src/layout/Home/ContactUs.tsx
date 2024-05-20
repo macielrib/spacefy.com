@@ -1,7 +1,6 @@
 
+import { MdOutlineConnectWithoutContact, MdTransform } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { MdTransform } from "react-icons/md";
-import { MdOutlineConnectWithoutContact } from "react-icons/md";
 
 export function ContactUs() {
   return (
@@ -31,7 +30,8 @@ export function ContactUs() {
             </Link>
 
             <Link
-              to=""
+              to="https://discord.gg/grv9szCdHe"
+              target="_blank"
               className="flex font-poppins text-white bg-[#171717] rounded-lg  border-solid border-[#313131] py-2 px-6 text-sm gap-2 transition-all duration-300 font-medium hover:-translate-y-1 hover:bg-white hover:text-black hover:border-0"
             >
               Contate-nos <MdOutlineConnectWithoutContact className="mt-[0.2rem]" />
