@@ -60,7 +60,7 @@ export function HeroSection() {
           </div>
           <div className="py-8 px-6">
             <Carousel
-              interval={2500}
+              interval={4000}
               autoPlay
               infiniteLoop
               swipeable={false}
