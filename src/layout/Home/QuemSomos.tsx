@@ -37,9 +37,9 @@ export function QuemSomos() {
               </p>
             </div>
             <img
-              src="https://ui.aceternity.com/_next/image?url=%2Flinear.webp&w=640&q=75"
-              width={600}
-              height={600}
+              src="https://cdn.discordapp.com/attachments/1241900073936228512/1242116829464363039/image.png?ex=664caaf1&is=664b5971&hm=5d2f701f4460c9b78723ce4d51ad1ec0a6f521533a7b28c9f3fcb946bc1f254b&tabs/Pulsecode.png"
+              width={650}
+              height={650}
               alt="linear demo image"
               className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
             />

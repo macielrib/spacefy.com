@@ -4,6 +4,7 @@ import { CardBody, CardContainer, CardItem } from "../../components/ui/3d-card";
 import { FaTwitter } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
+import { Analytics } from "@vercel/analytics/react"
 
 export function Works() {
   return (
@@ -349,6 +350,7 @@ export function Works() {
               </div>
             </CardBody>
           </CardContainer>
+          <Analytics />
         </div>
       </section>
     </>
