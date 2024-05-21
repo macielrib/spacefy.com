@@ -12,7 +12,7 @@ export default function Navbar() {
     { label: "  ", to: "/" },
     { label: "Quem Somos?", to: "/" },
 
-    { label: "Nossos Trabalhos", to: "/trabalhos" },
+    { label: "Nossos Trabalhos", to: "/" },
     { label: "Reviews", to: "/" },
     { label: "Contate-nos", to: "/" },
   ];
@@ -21,8 +21,8 @@ export default function Navbar() {
 
   return (
     <header>
-      <div className="bg-black flex justify-center lg:justify-around py-8 px-8 text-white h-2/5 max-h-[90px] border-b border-[#171717]">
-        <div className="flex items-center gap-4  z-20">
+      <div className="bg-black flex justify-center lg:justify-around py-8 px-8 text-white h-2/5 max-h-[90px] border-b border-[#171717] ">
+        <div className="flex items-center gap-4  z-20 animate-fade-down animate-duration-[2000ms]">
           {/* sidebar menu icon */}
           <div className="lg:hidden">
             <input id="open-menu" type="checkbox" className="drawer-toggle" />
@@ -88,7 +88,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <nav>
+        <nav className="animate-fade-down animate-duration-[2000ms]">
           <ul className="flex gap-6 justify-center text-center z-20">
             {navLinks.map((d, i) => (
               <li className="font-poppins font-medium text-sm text-[#9e9e9e] py-2 px-2 hidden lg:block  transition duration-300 hover:bg-[#171717] hover:text-white hover:scale-105 rounded-xl z-20">
@@ -100,7 +100,7 @@ export default function Navbar() {
           </ul>
         </nav>
 
-        <div className="flex items-center gap-4 z-20">
+        <div className="flex items-center gap-4 z-20 animate-fade-down animate-duration-[2000ms]">
           <div className="justify-start lg:justify-end gap-2 hidden lg:block">
             <Link
               to=""

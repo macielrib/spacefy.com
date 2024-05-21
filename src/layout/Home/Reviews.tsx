@@ -5,7 +5,7 @@ export function Reviews() {
     return (
         <>
       <section className="bg-black py-6">
-        <div className="flex flex-col items-center py-12 text-center px-16 lg:items-start lg:text-left">
+        <div className="flex flex-col items-center py-12 text-center px-16 lg:items-start lg:text-left animate-fade-down animate-duration-[2000ms]">
           <h1 className="text-[#daabff] text-md font-mulish font-semibold ">
             Recomendado & Confiável
           </h1>

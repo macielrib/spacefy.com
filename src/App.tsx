@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/react"
 import Navbar from "./layout/Navbar";
 import { HeroSection } from "./layout/Home/Hero";
 import { Footer } from "./layout/Footer";
-import { Works } from "./layout/Trabalhos/Works";
+
 
 function App() {
   return (
@@ -15,7 +15,6 @@ function App() {
         <Routes>
           <Route path="/" element={<HeroSection></HeroSection>}></Route>
 
-          <Route path="/trabalhos" element={<Works></Works>}></Route>
         </Routes>
         <Footer></Footer>
       </Router>

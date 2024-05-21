@@ -64,6 +64,7 @@ export default {
   plugins: [
     require('daisyui'),
     require('taos/plugin'),
+    require('tailwindcss-animated'),
     addVariablesForColors,
   ],
 
