@@ -15,7 +15,6 @@ function App() {
         <Routes>
           <Route path="/" element={<HeroSection></HeroSection>}></Route>
 
-          <Route path="/trabalhos" element={<Works></Works>}></Route>
         </Routes>
         <Footer></Footer>
       </Router>
