@@ -12,7 +12,7 @@ export default function Navbar() {
     { label: "  ", to: "/" },
     { label: "Quem Somos?", to: "/" },
 
-    { label: "Nossos Trabalhos", to: "/trabalhos" },
+    { label: "Nossos Trabalhos", to: "/" },
     { label: "Reviews", to: "/" },
     { label: "Contate-nos", to: "/" },
   ];
