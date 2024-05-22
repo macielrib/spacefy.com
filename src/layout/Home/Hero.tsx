@@ -48,19 +48,24 @@ export function HeroSection() {
             </div>
           </div>
           <div className="flex justify-center text-center py-6 gap-4 px-6 flex-wrap ">
-            <Link
-              to="https://discord.gg/grv9szCdHe"
-              target="_blank"
-              className="flex font-poppins text-white bg-indigo-800 rounded-lg py-2 px-6 text-sm gap-2 transition-all duration-300 font-medium hover:-translate-y-1 hover:bg-white hover:text-black hover:border-0 animate-fade-right animate-duration-[4000ms]"
-            >
-              Começar Agora! <GiFizzingFlask className="mt-[0.2rem]" />
-            </Link>
-            <Link
-              to=""
-              className="flex font-poppins text-white bg-[#171717] rounded-lg  border-solid border-[#313131] py-2 px-6 text-sm gap-2 transition-all duration-300 font-medium hover:-translate-y-1 hover:bg-white hover:text-black hover:border-0 animate-fade-left animate-duration-[5000ms]"
-            >
-              Falar Conosco <MdContacts className="mt-[0.2rem]" />
-            </Link>
+            <div className="animate-fade-right animate-duration-[3000ms]">
+              <Link
+                to="https://discord.gg/grv9szCdHe"
+                target="_blank"
+                className="flex font-poppins text-white bg-indigo-800 rounded-lg py-2 px-6 text-sm gap-2 transition-all duration-300 font-medium hover:-translate-y-1 hover:bg-white hover:text-black hover:border-0 "
+              >
+                Começar Agora! <GiFizzingFlask className="mt-[0.2rem]" />
+              </Link>
+            </div>
+            <div className="animate-fade-left animate-duration-[4000ms]">
+              <Link
+                to="https://discord.com/invite/grv9szCdHe"
+                target="_blank"
+                className="flex font-poppins text-white bg-[#171717] rounded-lg  border-solid border-[#313131] py-2 px-6 text-sm gap-2 transition-all duration-300 font-medium hover:-translate-y-1 hover:bg-white hover:text-black hover:border-0 "
+              >
+                Falar Conosco <MdContacts className="mt-[0.2rem]" />
+              </Link>
+            </div>
           </div>
           <div className="py-8 px-6 animate-fade-right animate-duration-[2000ms]">
             <Carousel

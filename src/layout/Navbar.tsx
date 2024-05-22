@@ -5,24 +5,20 @@ import { BiLogoDiscordAlt } from "react-icons/bi";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { SiRocket } from "react-icons/si";
 
-
-
 export default function Navbar() {
   const navLinks = [
     { label: "  ", to: "/" },
     { label: "Quem Somos?", to: "/" },
 
-    { label: "Nossos Trabalhos", to: "/" },
+    { label: "Nossos Trabalhos", to: "/trabalhos" },
     { label: "Reviews", to: "/" },
     { label: "Contate-nos", to: "/" },
   ];
 
-
-
   return (
     <header>
       <div className="bg-black flex justify-center lg:justify-around py-8 px-8 text-white h-2/5 max-h-[90px] border-b border-[#171717] ">
-        <div className="flex items-center gap-4  z-20 animate-fade-down animate-duration-[2000ms]">
+        <div className="flex items-center gap-4  z-20 ">
           {/* sidebar menu icon */}
           <div className="lg:hidden">
             <input id="open-menu" type="checkbox" className="drawer-toggle" />
@@ -44,12 +40,12 @@ export default function Navbar() {
               <ul className="menu p-4 w-80 min-h-full bg-[#171717] border-r border-solid shadow-xl border-[#19191A] text-base-content object-cover">
                 {/* Sidebar content here */}
                 <li className="mb-6">
-                <Link
-            to={"/"}
-            className="flex items-center  text-white transition duration-300 hover:scale-105  gap-4 font-inter text-2xl text-center justify-center font-bold"
-          >
-            <SiRocket className="!text-indigo-600 text-3xl" /> Spacefy
-          </Link>
+                  <Link
+                    to={"/"}
+                    className="flex items-center  text-white transition duration-300 hover:scale-105  gap-4 font-inter text-2xl text-center justify-center font-bold"
+                  >
+                    <SiRocket className="!text-indigo-600 text-3xl" /> Spacefy
+                  </Link>
                 </li>
                 <li className="font-poppins font-normal text-lg text-center text-[#9e9e9e] transition duration-300 hover:text-white hover:scale-105 ">
                   <a>Quem Somos?</a>
@@ -103,7 +99,8 @@ export default function Navbar() {
         <div className="flex items-center gap-4 z-20 animate-fade-down animate-duration-[2000ms]">
           <div className="justify-start lg:justify-end gap-2 hidden lg:block">
             <Link
-              to=""
+              to="https://discord.com/invite/grv9szCdHe"
+              target="_blank"
               className="flex font-poppins text-white bg-[#171717] rounded-xl  border-solid border-[#313131] py-2 px-4 text-sm gap-2 transition-all duration-300 font-medium hover:-translate-y-1 hover:bg-white hover:text-black hover:border-0"
             >
               <FaDiscord className="mt-[0.2rem] text-lg" />
@@ -111,7 +108,7 @@ export default function Navbar() {
           </div>
           <div className="justify-start lg:justify-end gap-2 hidden lg:block duration-500 animate-bounce">
             <Link
-              to=""
+              to="/trabalhos"
               className="flex font-poppins text-white bg-[#171717] rounded-xl  border-solid border-[#313131] py-2 px-4 text-sm gap-2 transition-all duration-300 font-medium hover:-translate-y-1 hover:bg-white hover:text-black hover:border-0"
             >
               Explorar <MdOutlineTravelExplore className="text-lg" />
