@@ -1,4 +1,5 @@
 import { FaDiscord, FaInstagram, FaTwitter } from "react-icons/fa6";
+import { HiOutlineExternalLink } from "react-icons/hi";
 import { TiArrowBack } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import { CardBody, CardContainer, CardItem } from "../../components/ui/3d-card";
@@ -9,42 +10,48 @@ const WORKS = [
     completionDays: 4,
     brand: 'Pulsecode ©',
     image: 'https://cdn.discordapp.com/attachments/1241900073936228512/1242116829464363039/image.png?ex=664ea531&is=664d53b1&hm=5cb0cf266164e09aee6d11a5352aad600915415a494cdbba4b7b682ff972c20b&',
-    social: { twitter: null, discord: null, instagram: null }
+    social: { twitter: null, discord: null, instagram: null },
+    redirectUrl: null
   },
   {
     title: 'HyriumNetwork',
     completionDays: 9,
     brand: 'Hyrium ©',
     image: 'https://cdn.discordapp.com/attachments/1241900073936228512/1242119042362245172/image.png?ex=664ea741&is=664d55c1&hm=c244ca063199f5356c825a6fec32e14814d5cb1de46868e14c045d43811a39be&',
-    social: { twitter: null, discord: null, instagram: null }
+    social: { twitter: null, discord: null, instagram: null },
+    redirectUrl: null
   },
   {
     title: 'fineMetrics',
     completionDays: 6,
     brand: 'fineMetrics ©',
     image: 'https://cdn.discordapp.com/attachments/1239202234265370624/1242823755844288665/image.png?ex=664f3d51&is=664debd1&hm=f339fef0ae87b38f26d8cf7d9f4599739aa7e191275c4a6c298431fefd97c8a5&',
-    social: { twitter: null, discord: null, instagram: null }
+    social: { twitter: null, discord: null, instagram: null },
+    redirectUrl: 'https://finemetrics.vercel.app'
   },
   {
     title: 'JW Saraiva',
     completionDays: 3,
     brand: 'Grupo JW ©',
     image: 'https://cdn.discordapp.com/attachments/1241900073936228512/1242119298172981308/image.png?ex=664ea77e&is=664d55fe&hm=9ce924060b7e797681b48e5c768b867dbf5ee33c4a8fee7fe182a859143480ac&',
-    social: { twitter: null, discord: null, instagram: null }
+    social: { twitter: null, discord: null, instagram: null },
+    redirectUrl: null
   },
   {
     title: 'Amazing Studios',
     completionDays: 7,
     brand: 'Amazing ©',
     image: 'https://cdn.discordapp.com/attachments/1241900073936228512/1242116702167109662/image.png?ex=664ea513&is=664d5393&hm=f1895054038fd05be3ae0f69fedf49c396c9b73315d238a2f199d7c5eee60f37&',
-    social: { twitter: null, discord: null, instagram: null }
+    social: { twitter: null, discord: null, instagram: null },
+    redirectUrl: null
   },
   {
     title: 'SpaceLabs',
     completionDays: 11,
     brand: 'SpaceLabs ©',
     image: 'https://cdn.discordapp.com/attachments/1241900073936228512/1242118413996920852/image.png?ex=664ea6ab&is=664d552b&hm=38146041bdb917bbc13c8f4bb8e2cb7af740f3d55f3754e32b72c46491a62c1a&',
-    social: { twitter: null, discord: null, instagram: null }
+    social: { twitter: null, discord: null, instagram: null },
+    redirectUrl: null
   },
 ]
 
@@ -129,6 +136,16 @@ export function Works() {
                       className="flex font-poppins text-white bg-[#171717] rounded-lg border-solid border-[#313131] py-2 px-6 text-xs gap-2 cursor-default opacity-50"
                     >
                       <FaInstagram />
+                    </Link>
+                  )}
+
+                  {work.redirectUrl && (
+                    <Link
+                      to={work.redirectUrl}
+                      target="_blank"
+                      className="flex font-poppins text-white bg-[#111] rounded-sm border-solid border-[#313131] py-2 px-6 text-xs gap-2 transition-all duration-300 hover:bg-white hover:text-black hover:-translate-y-1"
+                    >
+                      <HiOutlineExternalLink />
                     </Link>
                   )}
                 </div>
