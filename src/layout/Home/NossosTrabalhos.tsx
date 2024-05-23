@@ -7,7 +7,7 @@ export function NossosTrabalhos() {
       value: "hospedagem",
       content: (
         <>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('portfolio/png/Pulsecode.png')] lg:bg-no-repeat lg:bg-cover">
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('/portfolio/png/Pulsecode.png')] lg:bg-no-repeat lg:bg-cover">
             <div className="lg:hidden">
               <LojasImagem />
             </div>
@@ -21,7 +21,7 @@ export function NossosTrabalhos() {
       value: "empresarial",
       content: (
         <>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('portfolio/png/AmazingEmpresarial.png')] lg:bg-no-repeat lg:bg-cover">
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('/portfolio/png/AmazingEmpresarial.png')] lg:bg-no-repeat lg:bg-cover">
             <div className="lg:hidden">
               <EmpresarialImagem />
             </div>
@@ -34,7 +34,7 @@ export function NossosTrabalhos() {
       value: "jogos",
       content: (
         <>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('portfolio/png/TwistyJogo.png')] lg:bg-no-repeat lg:bg-cover">
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('/portfolio/png/TwistyJogo.png')] lg:bg-no-repeat lg:bg-cover">
             <div className="lg:hidden">
               <JogosImagem />
             </div>
@@ -47,7 +47,7 @@ export function NossosTrabalhos() {
       value: "constitucional",
       content: (
         <>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('portfolio/png/JWConstitucional.png')] lg:bg-no-repeat lg:bg-cover">
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('/portfolio/png/JWConstitucional.png')] lg:bg-no-repeat lg:bg-cover">
             <div className="lg:hidden">
               <ConstitucionalImagem />
             </div>
@@ -60,7 +60,7 @@ export function NossosTrabalhos() {
       value: "controle",
       content: (
         <>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('portfolio/png/LabsPainelDeControle.png')] lg:bg-no-repeat lg:bg-cover">
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('/portfolio/png/LabsPainelDeControle.png')] lg:bg-no-repeat lg:bg-cover">
             <div className="lg:hidden">
               <PainelImagem />
             </div>
@@ -103,7 +103,7 @@ export function NossosTrabalhos() {
 const LojasImagem = () => {
   return (
     <img
-      src="https://cdn.discordapp.com/attachments/1241900073936228512/1242116829464363039/image.png?ex=664caaf1&is=664b5971&hm=5d2f701f4460c9b78723ce4d51ad1ec0a6f521533a7b28c9f3fcb946bc1f254b&tabs/Pulsecode.png"
+      src="/portfolio/png/Pulsecode.png"
       alt="LojasImagem"
       width="1000"
       height="1000"
@@ -115,7 +115,7 @@ const LojasImagem = () => {
 const EmpresarialImagem = () => {
   return (
     <img
-      src="https://cdn.discordapp.com/attachments/1241900073936228512/1242116702167109662/image.png?ex=664caad3&is=664b5953&hm=277b2f67bec3d68bf4dbc84794908039540eb7163abc1363e942bf16477dc965&"
+      src="/portfolio/png/AmazingEmpresarial.png"
       alt="EmpresarialImagem"
       width="1000"
       height="1000"
@@ -127,7 +127,7 @@ const EmpresarialImagem = () => {
 const JogosImagem = () => {
   return (
     <img
-      src="https://media.discordapp.net/attachments/1241900073936228512/1242119042362245172/image.png?ex=664cad01&is=664b5b81&hm=8f4891fbe12649f441ef3d7463298084abccd3873d93202811651da8738ef627&=&format=webp"
+      src="/portfolio/png/TwistyJogo.png"
       alt="JogosImagem"
       width="1000"
       height="1000"
@@ -139,7 +139,7 @@ const JogosImagem = () => {
 const ConstitucionalImagem = () => {
   return (
     <img
-      src="https://cdn.discordapp.com/attachments/1241900073936228512/1242119298172981308/image.png?ex=664cad3e&is=664b5bbe&hm=72842029592b1b06c3637c2c09f776278d630beffe5f2b93fe5ba8aeec80cbb0&"
+      src="/portfolio/png/JWConstitucional.png"
       alt="ConstitucionalImagem"
       width="1000"
       height="1000"
@@ -151,7 +151,7 @@ const ConstitucionalImagem = () => {
 const PainelImagem = () => {
   return (
     <img
-      src="https://cdn.discordapp.com/attachments/890414849476165713/1241818371671199755/image.png?ex=664ce67b&is=664b94fb&hm=81df0ab953ee110dec36f488880df879ead3321e9344b6590371677b20eabbd9&"
+      src="/portfolio/png/LabsPainelDeControle.png"
       alt="PainelImagem"
       width="1000"
       height="1000"
