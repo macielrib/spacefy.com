@@ -11,11 +11,11 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const HERO_IMAGES = [
-  "/sliders/AmazingEmpresarial.png",
-  "/sliders/JWConstitucional.png",
-  "/sliders/LabsPainelDeControle.png",
-  "/sliders/Pulsecode.png",
-  "/sliders/TwistyJogo.png",
+  "/portfolio/png/AmazingEmpresarial.png",
+  "/portfolio/png/JWConstitucional.png",
+  "/portfolio/png/LabsPainelDeControle.png",
+  "/portfolio/png/Pulsecode.png",
+  "/portfolio/png/TwistyJogo.png",
 ];
 
 export function HeroSection() {

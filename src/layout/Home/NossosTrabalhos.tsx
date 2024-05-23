@@ -7,7 +7,7 @@ export function NossosTrabalhos() {
       value: "hospedagem",
       content: (
         <>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('assets/tabs/Pulsecode.png')] lg:bg-no-repeat lg:bg-cover">
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('portfolio/png/Pulsecode.png')] lg:bg-no-repeat lg:bg-cover">
             <div className="lg:hidden">
               <LojasImagem />
             </div>
@@ -21,7 +21,7 @@ export function NossosTrabalhos() {
       value: "empresarial",
       content: (
         <>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('assets/tabs/AmazingEmpresarial.png')] lg:bg-no-repeat lg:bg-cover">
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('portfolio/png/AmazingEmpresarial.png')] lg:bg-no-repeat lg:bg-cover">
             <div className="lg:hidden">
               <EmpresarialImagem />
             </div>
@@ -34,7 +34,7 @@ export function NossosTrabalhos() {
       value: "jogos",
       content: (
         <>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('assets/tabs/TwistyJogo.png')] lg:bg-no-repeat lg:bg-cover">
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('portfolio/png/TwistyJogo.png')] lg:bg-no-repeat lg:bg-cover">
             <div className="lg:hidden">
               <JogosImagem />
             </div>
@@ -47,7 +47,7 @@ export function NossosTrabalhos() {
       value: "constitucional",
       content: (
         <>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('assets/tabs/JWConstitucional.png')] lg:bg-no-repeat lg:bg-cover">
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('portfolio/png/JWConstitucional.png')] lg:bg-no-repeat lg:bg-cover">
             <div className="lg:hidden">
               <ConstitucionalImagem />
             </div>
@@ -60,7 +60,7 @@ export function NossosTrabalhos() {
       value: "controle",
       content: (
         <>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('assets/tabs/LabsPainelDeControle.png')] lg:bg-no-repeat lg:bg-cover">
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 lg:bg-[#171717] lg:border-4 lg:border-solid lg:border-[#171717] lg:bg-[url('portfolio/png/LabsPainelDeControle.png')] lg:bg-no-repeat lg:bg-cover">
             <div className="lg:hidden">
               <PainelImagem />
             </div>
