@@ -60,8 +60,8 @@ const WORKS = [
 export function Works() {
   return (
     <>
-      <section className="bg-black py-12 ">
-        <div className="flex px-24 animate-fade-right animate-duration-[4000ms]">
+      <section className="bg-black py-12">
+        <div className="justify-center lg:justify-start flex px-24 animate-fade-right animate-duration-[4000ms] py-4">
           <Link
             to="/"
             className="flex font-poppins text-white bg-[#171717] rounded-lg  border-solid border-[#313131] py-2 px-6 text-sm gap-2 transition-all duration-300 font-medium hover:-translate-y-1 hover:bg-white hover:text-black hover:border-0 "
@@ -69,7 +69,7 @@ export function Works() {
             Retornar <TiArrowBack className="mt-[0.2rem]" />
           </Link>
         </div>
-        <div className="flex flex-col items-center text-center animate-fade-down animate-duration-[2000ms]">
+        <div className="flex flex-col items-center text-center animate-fade-down animate-duration-[2000ms] px-12">
           <h1 className="text-[#daabff] text-md font-mulish font-semibold ">
             Inovação & Qualidade
           </h1>
