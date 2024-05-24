@@ -45,34 +45,34 @@ const testimonials = [
   {
     quote:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta aperiam modi itaque? At molestias odit voluptatibus mollitia hic consequuntur non ut, voluptatem saepe sed ad voluptates, excepturi blanditiis libero.",
-    name: "@WG Brasil",
+    name: "@mosaic",
     icon: <FaTwitter />,  
-    title:  `@MushMC`,
+    title:  `@JW Saraiva`,
    
   },
   {
     quote:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta aperiam modi itaque? At molestias odit voluptatibus mollitia hic consequuntur non ut, voluptatem saepe sed ad voluptates, excepturi blanditiis libero.",
-    name: "@lupoficial",
+    name: "@vitinholucasofc",
     icon: <FaTwitter />,  
-    title:  `@RedeScreen`,
+    title:  `@HyriumNetwork`,
    
   },
 
   {
     quote:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta aperiam modi itaque? At molestias odit voluptatibus mollitia hic consequuntur non ut, voluptatem saepe sed ad voluptates, excepturi blanditiis libero.",
-    name: "@MerDarte",
+    name: "@Galaxy",
     icon: <FaTwitter />,  
-    title:  `@EnxadaHost`,
+    title:  `@Coldfy`,
    
   },
   {
     quote:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta aperiam modi itaque? At molestias odit voluptatibus mollitia hic consequuntur non ut, voluptatem saepe sed ad voluptates, excepturi blanditiis libero.",
-    name: "@LittleMan",
+    name: "@JuanFreitas",
     icon: <FaTwitter />,  
-    title:  `@MinecraftSpace`,
+    title:  `@_juanfreitas`,
    
   },
 ];
