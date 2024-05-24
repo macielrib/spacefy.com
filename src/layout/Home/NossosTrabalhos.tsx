@@ -1,3 +1,4 @@
+import { Reveal } from "../../components/motion/RevealScroll";
 import { Tabs } from "../../components/ui/tabs";
 
 export function NossosTrabalhos() {
@@ -73,6 +74,7 @@ export function NossosTrabalhos() {
   return (
     <>
       <section className="bg-black py-12">
+        <Reveal>
         <div className="flex flex-col lg:items-start py-12 lg:px-16 text-center lg:text-start animate-fade-down animate-duration-[2000ms]">
           <div className="px-6">
             <h1 className="text-[#daabff] text-md font-mulish font-semibold ">
@@ -95,6 +97,7 @@ export function NossosTrabalhos() {
             <Tabs tabs={tabs} />
           </div>
         </div>
+        </Reveal>
       </section>
     </>
   );

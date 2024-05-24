@@ -1,10 +1,12 @@
 import { MdOutlineConnectWithoutContact, MdTransform } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { Reveal } from "../../components/motion/RevealScroll";
 
 export function ContactUs() {
   return (
     <>
       <section className="bg-black py-6">
+        <Reveal>
         <div className="flex flex-col items-center py-12 text-center animate-fade-down animate-duration-[2000ms]">
           <h1 className="text-[#daabff] text-md font-mulish font-semibold ">
             Garantindo a Inovação!
@@ -39,6 +41,7 @@ export function ContactUs() {
             </Link>
           </div>
         </div>
+        </Reveal>
       </section>
     </>
   );

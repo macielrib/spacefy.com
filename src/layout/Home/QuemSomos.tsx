@@ -1,9 +1,11 @@
+import { Reveal } from "../../components/motion/RevealScroll";
 import { WobbleCard } from "../../components/ui/wobble-card";
 
 export function QuemSomos() {
   return (
     <>
       <section className="bg-black py-6 ">
+        <Reveal>
         <div className="flex flex-col items-center py-12 text-center animate-fade-down animate-duration-[2000ms]">
           <h1 className="text-[#daabff] text-md font-mulish font-semibold ">
             Experiência & Inovação
@@ -21,7 +23,8 @@ export function QuemSomos() {
             online marcante.
           </p>
         </div>
-
+        </Reveal>
+        <Reveal>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full px-6 animate-fade-down animate-duration-[2000ms]">
           <WobbleCard
             containerClassName="col-span-1 lg:col-span-2 h-full bg-purple-800 min-h-[500px] lg:min-h-[300px]"
@@ -73,6 +76,7 @@ export function QuemSomos() {
             />
           </WobbleCard>
         </div>
+        </Reveal>
       </section>
     </>
   );

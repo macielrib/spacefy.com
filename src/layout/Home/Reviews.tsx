@@ -1,3 +1,4 @@
+import { Reveal } from "../../components/motion/RevealScroll";
 import { InfiniteMovingCards } from "../../components/ui/infinite-moving-cards";
 import { FaTwitter } from "react-icons/fa";
 
@@ -5,6 +6,7 @@ export function Reviews() {
     return (
         <>
       <section className="bg-black py-6">
+        <Reveal>
         <div className="flex flex-col items-center py-12 text-center px-16 lg:items-start lg:text-left animate-fade-down animate-duration-[2000ms]">
           <h1 className="text-[#daabff] text-md font-mulish font-semibold ">
             Recomendado & Confiável
@@ -21,7 +23,10 @@ export function Reviews() {
           </p>
           
         </div>
+        </Reveal>
+        <Reveal>
        <div>
+    
        <InfiniteMovingCards
         items={testimonials}
         direction="right"
@@ -29,7 +34,7 @@ export function Reviews() {
      
       />
        </div>
-    
+       </Reveal>
       
       </section>
         </>

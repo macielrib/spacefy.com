@@ -9,6 +9,7 @@ import { Reviews } from "./Reviews";
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Reveal } from "../../components/motion/RevealScroll";
 
 const HERO_IMAGES = [
   "/portfolio/png/AmazingEmpresarial.png",
@@ -23,30 +24,32 @@ export function HeroSection() {
     <>
       <section>
         <div className="h-full w-full bg-black flex flex-col items-center justify-center py-6 ">
-          <div className="text-center max-w-md lg:max-w-screen-xl ">
-            <div className="animate-fade-left animate-duration-[2000ms]">
-              <Button
-                borderRadius="1.75rem"
-                className="bg-[ #171717] text-white font-inter font-semibold border-[#333] gap-2 "
-              >
-                Sites de Sucesso{" "}
-                <GiJusticeStar className="animate-spin duration-1000 delay-1000 text-indigo-600 text-lg" />
-              </Button>
-            </div>
+          <Reveal>
+            <div className="text-center max-w-md lg:max-w-screen-xl ">
+              <div className="animate-fade-left animate-duration-[2000ms]">
+                <Button
+                  borderRadius="1.75rem"
+                  className="bg-[ #171717] text-white font-inter font-semibold border-[#333] gap-2 "
+                >
+                  Sites de Sucesso{" "}
+                  <GiJusticeStar className="animate-spin duration-1000 delay-1000 text-indigo-600 text-lg" />
+                </Button>
+              </div>
 
-            <div className="animate-fade-down animate-duration-[2000ms]">
-              <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-[#daabff] to-[#5723ac] font-semibold text-5xl lg:text-7xl font-poppins">
-                Explore o Inovador.
-              </h1>
-              <h1 className="text-white font-bold text-5xl lg:text-7xl font-poppins">
-                Crie Sites de Sucesso.
-              </h1>
-              <p className="text-[#9e9e9e] font-inter font-normal leading-normal text-md mt-4 ">
-                Onde a imaginação encontra a inovação. Liberte sua criatividade
-                conosco!
-              </p>
+              <div className="animate-fade-down animate-duration-[2000ms]">
+                <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-[#daabff] to-[#5723ac] font-semibold text-5xl lg:text-7xl font-poppins">
+                  Explore o Inovador.
+                </h1>
+                <h1 className="text-white font-bold text-5xl lg:text-7xl font-poppins">
+                  Crie Sites de Sucesso.
+                </h1>
+                <p className="text-[#9e9e9e] font-inter font-normal leading-normal text-md mt-4 ">
+                  Onde a imaginação encontra a inovação. Liberte sua
+                  criatividade conosco!
+                </p>
+              </div>
             </div>
-          </div>
+          </Reveal>
           <div className="flex justify-center text-center py-6 gap-4 px-6 flex-wrap ">
             <div className="animate-fade-right animate-duration-[3000ms]">
               <Link
@@ -67,6 +70,7 @@ export function HeroSection() {
               </Link>
             </div>
           </div>
+
           <div className="py-8 px-6 animate-fade-right animate-duration-[2000ms]">
             <Carousel
               interval={4000}
