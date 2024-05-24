@@ -40,7 +40,7 @@ export function QuemSomos() {
               </p>
             </div>
             <img
-              src="https://cdn.discordapp.com/attachments/1241900073936228512/1242116829464363039/image.png?ex=664caaf1&is=664b5971&hm=5d2f701f4460c9b78723ce4d51ad1ec0a6f521533a7b28c9f3fcb946bc1f254b&tabs/Pulsecode.png"
+              src="/portfolio/png/Pulsecode.png"
               width={650}
               height={650}
               alt="linear demo image"
