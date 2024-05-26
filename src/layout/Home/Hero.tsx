@@ -1,7 +1,7 @@
 import { GiFizzingFlask, GiJusticeStar } from "react-icons/gi";
 import { MdContacts } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { Button } from "../../components/ui/moving-border";
+
 import { ContactUs } from "./ContactUs";
 import { NossosTrabalhos } from "./NossosTrabalhos";
 import { QuemSomos } from "./QuemSomos";
@@ -10,6 +10,7 @@ import { Reviews } from "./Reviews";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Reveal } from "../../components/motion/RevealScroll";
+import { Button } from "../../components/ui/moving-border";
 
 const HERO_IMAGES = [
   "/portfolio/png/AmazingEmpresarial.png",
@@ -26,7 +27,7 @@ export function HeroSection() {
         <div className="h-full w-full bg-black flex flex-col items-center justify-center py-6 ">
           <Reveal>
             <div className="text-center max-w-md lg:max-w-screen-xl ">
-              <div className="animate-fade-left animate-duration-[2000ms]">
+            <div className="animate-fade-left animate-duration-[2000ms]">
                 <Button
                   borderRadius="1.75rem"
                   className="bg-[ #171717] text-white font-inter font-semibold border-[#333] gap-2 "
@@ -35,7 +36,6 @@ export function HeroSection() {
                   <GiJusticeStar className="animate-spin duration-1000 delay-1000 text-indigo-600 text-lg" />
                 </Button>
               </div>
-
               <div className="animate-fade-down animate-duration-[2000ms]">
                 <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-[#daabff] to-[#5723ac] font-semibold text-5xl lg:text-7xl font-poppins">
                   Explore o Inovador.

@@ -48,10 +48,19 @@ export default {
       },
       animation: {
         tilt: 'tilt 10s infinite linear',
+        shimmer: "shimmer 8s infinite",
         scroll:
         "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
+        shimmer: {
+          "0%, 90%, 100%": {
+            "background-position": "calc(-100% - var(--shimmer-width)) 0",
+          },
+          "30%, 60%": {
+            "background-position": "calc(100% + var(--shimmer-width)) 0",
+          },
+        },
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
