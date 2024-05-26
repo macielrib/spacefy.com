@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { CgMenuGridO } from "react-icons/cg";
-import { FaDiscord } from "react-icons/fa6";
+import { FaDiscord, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { BiLogoDiscordAlt } from "react-icons/bi";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { SiRocket } from "react-icons/si";
@@ -97,19 +97,27 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-4 z-20 animate-fade-down animate-duration-[2000ms]">
-          <div className="justify-start lg:justify-end gap-2 hidden lg:block">
-            <Link
-              to="https://discord.com/invite/grv9szCdHe"
-              target="_blank"
-              className="flex font-poppins text-white bg-[#171717] rounded-xl  border-solid border-[#313131] py-2 px-4 text-sm gap-2 transition-all duration-300 font-medium hover:-translate-y-1 hover:bg-white hover:text-black hover:border-0"
-            >
-              <FaDiscord className="mt-[0.2rem] text-lg" />
-            </Link>
+          <div className="flex flex-col lg:flex-row gap-2">
+            <a href="https://wa.link/dv04f7" target="_blank">
+              <div className="font-bold py-3 px-4 bg-transparent border-solid border-[#333] border rounded-lg text-white text-md transition duration-300 hover:bg-white hover:border-white hover:text-black hover:scale-105">
+                <FaWhatsapp />
+              </div>
+            </a>
+            <a href="https://www.instagram.com/spacefy_oficial/" target="_blank">
+              <div className="font-bold py-3 px-4 bg-transparent border-solid border-[#333] border rounded-lg text-white text-md transition duration-300 hover:bg-white hover:border-white hover:text-black hover:scale-105">
+                <FaInstagram />
+              </div>
+            </a>
+            <a href="https://discord.gg/VZvz8rUTuv" target="_blank">
+              <div className="font-bold py-3 px-4 bg-transparent border-solid border-[#333] border rounded-lg text-white text-md transition duration-300 hover:bg-white hover:border-white hover:text-black hover:scale-105">
+                <FaDiscord />
+              </div>
+            </a>
           </div>
           <div className="justify-start lg:justify-end gap-2 hidden lg:block duration-500 animate-bounce">
             <Link
               to="/trabalhos"
-              className="flex font-poppins text-white bg-[#171717] rounded-xl  border-solid border-[#313131] py-2 px-4 text-sm gap-2 transition-all duration-300 font-medium hover:-translate-y-1 hover:bg-white hover:text-black hover:border-0"
+              className="flex font-poppins text-white bg-[#171717] rounded-xl  border-solid border-[#313131] py-3 px-4 text-sm gap-2 transition-all duration-300 font-medium hover:-translate-y-1 hover:bg-white hover:text-black hover:border-0"
             >
               Explorar <MdOutlineTravelExplore className="text-lg" />
             </Link>

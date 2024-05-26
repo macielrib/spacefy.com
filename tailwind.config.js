@@ -47,12 +47,17 @@ export default {
         mulish: ['Mulish', 'sans-serif'],
       },
       animation: {
+        fadeIn: 'fadeIn 0.5s ease-in-out',
         tilt: 'tilt 10s infinite linear',
         shimmer: "shimmer 8s infinite",
         scroll:
         "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
         shimmer: {
           "0%, 90%, 100%": {
             "background-position": "calc(-100% - var(--shimmer-width)) 0",

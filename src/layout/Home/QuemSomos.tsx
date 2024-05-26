@@ -68,7 +68,7 @@ export function QuemSomos() {
               </p>
             </div>
             <img
-              src="https://ui.aceternity.com/_next/image?url=%2Flinear.webp&w=640&q=75"
+              src="/public/portfolio/png/greenleaf.png"
               width={600}
               height={600}
               alt="linear demo image"
