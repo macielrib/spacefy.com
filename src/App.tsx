@@ -6,6 +6,10 @@ import { HeroSection } from "./layout/Home/Hero";
 import { Footer } from "./layout/Footer";
 import { Works } from "./layout/Trabalhos/Works";
 
+import ReactGA from "react-ga";
+
+const TRACKING_ID = "G-G6FCZ89EJM";
+ReactGA.initialize(TRACKING_ID)
 
 function App() {
   return (
@@ -24,5 +28,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;

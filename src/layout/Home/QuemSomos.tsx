@@ -68,7 +68,7 @@ export function QuemSomos() {
               </p>
             </div>
             <img
-              src="/public/portfolio/png/greenleaf.png"
+              src="/portfolio/png/greenleaf.png"
               width={600}
               height={600}
               alt="linear demo image"
