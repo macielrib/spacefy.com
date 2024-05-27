@@ -1,119 +1,112 @@
-import { Link } from "react-router-dom";
+import { BiLogoDiscordAlt } from "react-icons/bi";
 import { CgMenuGridO } from "react-icons/cg";
 import { FaDiscord, FaInstagram, FaWhatsapp } from "react-icons/fa6";
-import { BiLogoDiscordAlt } from "react-icons/bi";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { SiRocket } from "react-icons/si";
+import { Link } from "react-router-dom";
+
+function Logo() {
+  return (
+    <Link
+      to={"/"}
+      className="flex items-center transition duration-300 hover:scale-105 gap-2 font-inter text-2xl text-center justify-center text-white font-bold"
+    >
+      <SiRocket className="!text-indigo-600 text-3xl" />
+      Spacefy
+    </Link>
+  )
+}
+
+function SocialLinks({ className }: { className?: string }) {
+  return (
+    <div className={`flex gap-2 ${className || ''}`}>
+      <a href="https://wa.link/dv04f7" target="_blank">
+        <div className="font-bold py-3 px-4 bg-transparent border-solid border-[#333] border rounded-lg text-white text-md transition duration-300 hover:bg-white hover:border-white hover:text-black hover:scale-105">
+          <FaWhatsapp />
+        </div>
+      </a>
+      <a href="https://www.instagram.com/spacefy_oficial/" target="_blank">
+        <div className="font-bold py-3 px-4 bg-transparent border-solid border-[#333] border rounded-lg text-white text-md transition duration-300 hover:bg-white hover:border-white hover:text-black hover:scale-105">
+          <FaInstagram />
+        </div>
+      </a>
+      <a href="https://discord.gg/VZvz8rUTuv" target="_blank">
+        <div className="font-bold py-3 px-4 bg-transparent border-solid border-[#333] border rounded-lg text-white text-md transition duration-300 hover:bg-white hover:border-white hover:text-black hover:scale-105">
+          <FaDiscord />
+        </div>
+      </a>
+    </div>
+  )
+}
 
 export default function Navbar() {
   const navLinks = [
-    { label: "  ", to: "/" },
-    { label: "Quem Somos?", to: "/" },
-
     { label: "Nossos Trabalhos", to: "/trabalhos" },
-    { label: "Reviews", to: "/" },
-    { label: "Contate-nos", to: "/" },
+    { label: "Reviews", to: "/#reviews" },
   ];
 
   return (
     <header>
-      <div className="bg-black flex justify-center lg:justify-around py-8 px-8 text-white h-2/5 max-h-[90px] border-b border-[#171717] ">
-        <div className="flex items-center gap-4  z-20 ">
-          {/* sidebar menu icon */}
+      <div className="bg-black flex justify-center lg:justify-evenly py-8 px-8 text-white h-2/5 max-h-[90px] border-b border-[#171717]">
+        <div className="flex items-center gap-6">
           <div className="lg:hidden">
             <input id="open-menu" type="checkbox" className="drawer-toggle" />
             <div>
-              {/* Page content here */}
               <label htmlFor="open-menu" className="cursor-pointer">
-                <div className="bg-[#1A1A1A] rounded-xl transition duration-300  cursor-pointer py-3 px-3 text-xl lg:hidden hover:bg-white hover:text-black hover:scale-110">
-                  <CgMenuGridO />
+                <div className="bg-[#1A1A1A] rounded-xl transition duration-300  cursor-pointer p-3 text-xl lg:hidden hover:bg-white hover:text-black hover:scale-110">
+                  <CgMenuGridO size={20} />
                 </div>
               </label>
             </div>
 
-            <div className="drawer-side">
+            <div className="drawer-side z-20">
               <label
                 htmlFor="open-menu"
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
               <ul className="menu p-4 w-80 min-h-full bg-[#171717] border-r border-solid shadow-xl border-[#19191A] text-base-content object-cover">
-                {/* Sidebar content here */}
                 <li className="mb-6">
-                  <Link
-                    to={"/"}
-                    className="flex items-center  text-white transition duration-300 hover:scale-105  gap-4 font-inter text-2xl text-center justify-center font-bold"
-                  >
-                    <SiRocket className="!text-indigo-600 text-3xl" /> Spacefy
-                  </Link>
-                </li>
-                <li className="font-poppins font-normal text-lg text-center text-[#9e9e9e] transition duration-300 hover:text-white hover:scale-105 ">
-                  <a>Quem Somos?</a>
-                </li>
-                <li className="font-poppins font-normal text-lg text-center text-[#9e9e9e] transition duration-300 hover:text-white hover:scale-105 ">
-                  <a href="/trabalhos">Nossos Trabalhos</a>
-                </li>
-                <li className="font-poppins font-normal text-lg text-center text-[#9e9e9e] transition duration-300 hover:text-white hover:scale-105 ">
-                  <a>Reviews</a>
-                </li>
-                <li className="font-poppins font-normal text-lg text-center text-[#9e9e9e] transition duration-300 hover:text-white hover:scale-105 ">
-                  <a>Contate-nos</a>
+                  <Logo />
                 </li>
 
-                <li className="absolute bottom-0 mb-6">
-                  <a className="bg-black py-2 px-24 font-poppins text-white font-medium gap-2 border border-solid border-[#313131] transition-all duration-300 hover:bg-white hover:text-black hover:scale-105 hover:border-white">
-                    Contato
-                  </a>
-                </li>
+                {navLinks.map((link, idx) => (
+                  <li key={idx} className="font-poppins font-normal text-lg text-center text-[#9e9e9e] transition duration-300 hover:text-white hover:scale-105">
+                    <a href={link.to}>
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+
+                <SocialLinks className="mt-auto mb-0 w-fit" />
               </ul>
             </div>
           </div>
-          {/* logo */}
+
+          <Logo />
 
           <Link
-            to={"/"}
-            className="flex items-center  transition duration-300 hover:scale-105  gap-4 font-inter text-2xl text-center justify-center font-bold"
-          >
-            <SiRocket className="!text-indigo-600 text-3xl" /> Spacefy
-          </Link>
-          <Link
             to="#"
-            className="flex font-poppins text-white bg-[#6665D2] rounded-xl text-xl py-2 px-4  gap-2 transition-all duration-300 font-medium hover:-translate-y-1 hover:bg-[#7289DA] hover:text-white lg:hidden"
+            className="flex font-poppins text-white bg-[#6665D2] rounded-xl text-xl py-3 px-3 gap-2 transition-all duration-300 font-medium hover:-translate-y-1 hover:bg-[#7289DA] hover:text-white lg:hidden"
           >
-            <BiLogoDiscordAlt className="mt-[0.2rem] " />
+            <BiLogoDiscordAlt size={20} />
           </Link>
         </div>
 
         <nav className="animate-fade-down animate-duration-[2000ms]">
-          <ul className="flex gap-6 justify-center text-center z-20">
-            {navLinks.map((d, i) => (
-              <li className="font-poppins font-medium text-sm text-[#9e9e9e] py-2 px-2 hidden lg:block  transition duration-300 hover:bg-[#171717] hover:text-white hover:scale-105 rounded-xl z-20">
-                <Link to={d.to} key={i}>
-                  {d.label}
+          <ul className="flex gap-6">
+            {navLinks.map((link, idx) => (
+              <li key={idx} className="font-poppins font-medium text-sm text-[#9e9e9e] py-2 px-2 hidden lg:block transition duration-300 hover:bg-[#171717] hover:text-white hover:scale-105 rounded-xl">
+                <Link to={link.to}>
+                  {link.label}
                 </Link>
               </li>
             ))}
           </ul>
         </nav>
 
-        <div className="flex items-center gap-4 z-20 animate-fade-down animate-duration-[2000ms]">
-          <div className="flex flex-col lg:flex-row gap-2">
-            <a href="https://wa.link/dv04f7" target="_blank">
-              <div className="font-bold py-3 px-4 bg-transparent border-solid border-[#333] border rounded-lg text-white text-md transition duration-300 hover:bg-white hover:border-white hover:text-black hover:scale-105">
-                <FaWhatsapp />
-              </div>
-            </a>
-            <a href="https://www.instagram.com/spacefy_oficial/" target="_blank">
-              <div className="font-bold py-3 px-4 bg-transparent border-solid border-[#333] border rounded-lg text-white text-md transition duration-300 hover:bg-white hover:border-white hover:text-black hover:scale-105">
-                <FaInstagram />
-              </div>
-            </a>
-            <a href="https://discord.gg/VZvz8rUTuv" target="_blank">
-              <div className="font-bold py-3 px-4 bg-transparent border-solid border-[#333] border rounded-lg text-white text-md transition duration-300 hover:bg-white hover:border-white hover:text-black hover:scale-105">
-                <FaDiscord />
-              </div>
-            </a>
-          </div>
+        <div className="flex items-center gap-4 animate-fade-down animate-duration-[2000ms]">
+          <SocialLinks className="hidden lg:flex" />
           <div className="justify-start lg:justify-end gap-2 hidden lg:block duration-500 animate-bounce">
             <Link
               to="/trabalhos"
@@ -124,7 +117,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      {/* sideBar mobile section */}
     </header>
   );
 }
